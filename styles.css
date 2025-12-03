@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+h1 {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 0.01px;
+    font-size: 60px;
+    font-weight: 500;
+    font-style: normal;
+    color: #fff6f1;
+    text-align: left;
+    margin: 0 0 30px 0;
+}
+
+p {
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 160px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #cc425b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 500px;
+    /* border: 1px solid #a72d43; */
+}
+
+.canvas {
+    background-color: #fff6f1;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 500px;
+    width: 500px;
+    display: flex;
+    border: 5px solid transparent; 
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #fff6f1, #fff6f1), /* Gradient for the border */
+                        linear-gradient(#a53c4f, #fc819c); /* Solid color for the inner background */
+    background-origin: border-box; /* Start the gradient from the border edge */
+    background-clip: content-box, border-box; /* Clip the solid background to content, gradient to border */
+}
+
+input {
+    background-color: #fc819c;
+    color:#892336;
+    border-radius: 100px;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+}
+
+input::placeholder {
+  color: #892336;
+  opacity: 1; 
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+button {
+    border-radius: 100px;
+    border: none;
+    padding: 15px;
+    min-width: 150px;
+    font-family: "Funnel Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 20px;
+    font-weight: 600;
+    font-style: normal;
+    cursor: pointer;
+    display:flex;
+    gap: 10px;
+}
+
+button.buttonDraw {
+  background: #fff6f1;
+  color: #ef4060;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button.buttonDraw::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(239,64,96,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+button.buttonDraw:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(249,149,171,0.5);
+}
+
+button.buttonDraw:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
+
+button.buttonDelete {
+    background-color: #892336;
+    color: #ef4060;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+button.buttonDelete::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg, 
+    transparent, 
+    transparent 30%, 
+    rgba(239,64,96,0.3)
+  );
+  transform: rotate(-45deg);
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+button.buttonDelete:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(249,149,171,0.5);
+}
+
+button.buttonDelete:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
