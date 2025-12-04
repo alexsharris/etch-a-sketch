@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <script src="javascript.js" defer></script>
 
 </head>
 <body>
@@ -17,9 +18,9 @@
     <h1>Etch-a-Sketch</h1>
     <p>Choose grid size</p>
     <div class="buttonContainer">
-        <button class="buttonDraw"><span class="material-symbols-outlined">grid_on</span>16 x 16</button>
-        <button class="buttonDraw"><span class="material-symbols-outlined">grid_on</span>32 x 32</button>
-        <button class="buttonDraw"><span class="material-symbols-outlined">grid_on</span>80 x 80</button>
+        <button class="buttonDraw" onclick="createGrid(16)"><span class="material-symbols-outlined">grid_on</span>16 x 16</button>
+        <button class="buttonDraw" onclick="createGrid(32)"><span class="material-symbols-outlined">grid_on</span>32 x 32</button>
+        <button class="buttonDraw" onclick="createGrid(80)"><span class="material-symbols-outlined">grid_on</span>80 x 80</button>
     </div>
     <div class="canvas">
     </div>

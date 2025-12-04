@@ -62,8 +62,6 @@ body {
 
 .tile {
     border: 1px solid #f0f0ff;
-    width: 30px;
-    height: 30px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: auto;
