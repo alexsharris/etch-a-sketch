@@ -23,9 +23,10 @@ h1 {
 p {
     font-family: "Funnel Sans", sans-serif;
     font-optical-sizing: auto;
-    font-size: 160px;
+    font-size: 16px;
     font-weight: 400;
     font-style: normal;
+    color: white;
 }
 
 body {
@@ -47,19 +48,35 @@ body {
     background-color: #fff6f1;
     margin-top: 20px;
     margin-bottom: 20px;
-    height: 500px;
-    width: 500px;
+    height: 480px;
+    width: 480px;
     display: flex;
+    flex-wrap: wrap;
     border: 5px solid transparent; 
     border-radius: 10px;
     background-image: linear-gradient(to right, #fff6f1, #fff6f1), /* Gradient for the border */
-                        linear-gradient(#a53c4f, #fc819c); /* Solid color for the inner background */
+    linear-gradient(#a53c4f, #fc819c); /* Solid color for the inner background */
     background-origin: border-box; /* Start the gradient from the border edge */
     background-clip: content-box, border-box; /* Clip the solid background to content, gradient to border */
 }
 
+.tile {
+    border: 1px solid #f0f0ff;
+    width: 30px;
+    height: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+    box-sizing: border-box;
+}
+
+.tile:hover{
+    background-color: black;
+    border: 1px solid black;
+}
+
 input {
-    background-color: #fc819c;
+    background-color: #ec617f;
     color:#892336;
     border-radius: 100px;
     border: none;
@@ -85,7 +102,7 @@ input::placeholder {
 
 button {
     border-radius: 100px;
-    border: none;
+    border: 3px solid black;
     padding: 15px;
     min-width: 150px;
     font-family: "Funnel Sans", sans-serif;
