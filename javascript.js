@@ -20,3 +20,12 @@ let createGrid = function(size) {
         canvas.appendChild(newTile);
     }
 }
+
+// Add event listeners to all tiles
+
+document.addEventListener("mouseover", (event) => {
+    if (event.target.classList.contains("tile")) {
+        event.target.style.backgroundColor = "Black";
+        event.target.style.borderColor = "Black";
+    }
+});

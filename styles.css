@@ -68,10 +68,10 @@ body {
     box-sizing: border-box;
 }
 
-.tile:hover{
+/*.tile:hover{
     background-color: black;
     border: 1px solid black;
-}
+}*/
 
 input {
     background-color: #ec617f;
@@ -102,7 +102,7 @@ button {
     border-radius: 100px;
     border: 3px solid black;
     padding: 15px;
-    min-width: 150px;
+    min-width: 140px;
     font-family: "Funnel Sans", sans-serif;
     font-optical-sizing: auto;
     font-size: 20px;
